@@ -1,0 +1,56 @@
+# MERN AI Flow
+
+A simple AI chat app where you type a question, click Run Flow, and get an AI response — built with the MERN stack and React Flow.
+
+---
+
+## What I Built
+
+Two nodes connected by a line on the screen:
+- **Left Node** — Type your question here
+- **Right Node** — AI answer appears here
+
+You can also save any conversation to MongoDB and view history.
+
+---
+
+## Tech Used
+
+**Frontend**
+- React
+- React Flow (for the node/edge visualization)
+- Vite
+
+**Backend**
+- Node.js
+- Express.js
+
+**Database**
+- MongoDB Atlas
+
+**AI**
+- OpenRouter API — using `meta-llama/llama-3.3-70b-instruct:free` (free model, no cost)
+
+---
+
+## API Keys Needed
+
+1. **OpenRouter** → https://openrouter.ai/keys (free, no credit card)
+2. **MongoDB Atlas** → https://cloud.mongodb.com (free M0 cluster)
+
+---
+
+## How to Run
+
+1. Clone the repo
+2. Create a `.env` file:
+```
+OPENROUTER_API_KEY=your_key_here
+MONGODB_URI=your_mongodb_uri_here
+```
+3. Run:
+```bash
+npm install
+npm run dev
+```
+4. Open http://localhost:5173
