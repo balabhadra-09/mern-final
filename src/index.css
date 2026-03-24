@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+:root {
+  --white: #ffffff;
+  --off-white: #fafaf9;
+  --cream: #f7f4ef;
+  --smoke: #f0ede8;
+  --border: #e8e4de;
+  --border-soft: #f0ece6;
+  --text-primary: #1a1714;
+  --text-secondary: #6b6560;
+  --text-muted: #a09b94;
+  --accent: #2d2926;
+  --accent-warm: #8b6f47;
+  --accent-gold: #c9a96e;
+  --accent-green: #3d6b4f;
+  --success: #3d6b4f;
+  --error: #8b3a3a;
+  --shadow-xs: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.07);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.09);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+  --shadow-xl: 0 20px 60px rgba(0,0,0,0.14);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body, #root { height: 100%; width: 100%; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--off-white);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+.react-flow__background { background-color: var(--cream) !important; }
+.react-flow__background pattern circle { fill: var(--border) !important; }
+.react-flow__edge-path { stroke: var(--accent-gold) !important; stroke-width: 2px !important; }
+
+.react-flow__controls {
+  background: var(--white) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-md) !important;
+  overflow: hidden;
+}
+.react-flow__controls-button {
+  background: var(--white) !important;
+  border: none !important;
+  border-bottom: 1px solid var(--border-soft) !important;
+  color: var(--text-secondary) !important;
+  width: 36px !important;
+  height: 36px !important;
+}
+.react-flow__controls-button:hover { background: var(--cream) !important; }
+.react-flow__controls-button svg { fill: var(--text-secondary) !important; }
+.react-flow__minimap {
+  background: var(--white) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-md) !important;
+  overflow: hidden;
+}
+.react-flow__handle { transition: transform 0.2s ease; }
+.react-flow__handle:hover { transform: scale(1.3); }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
